@@ -542,6 +542,117 @@ OPTIMIZACIONES DE COSTO:
 - Monitorear uso de recursos
 
 ================================================================================
+8. DESPLIEGUE EN GITHUB PAGES
+================================================================================
+
+PRERREQUISITOS PARA GITHUB PAGES:
+1. Cuenta de GitHub
+2. Repositorio público o privado
+3. Git instalado y configurado
+4. Node.js y npm
+
+CONFIGURACIÓN INICIAL DE GITHUB PAGES:
+
+1. Configurar Astro para GitHub Pages:
+```bash
+# Editar astro.config.mjs
+export default defineConfig({
+  site: 'https://TU_USUARIO.github.io',
+  base: '/TU_REPOSITORIO',
+  // ... resto de configuración
+});
+```
+
+2. Configurar GitHub Pages en el repositorio:
+   - Ve a Settings > Pages
+   - Source: "Deploy from a branch"
+   - Branch: gh-pages
+   - Folder: / (root)
+   - Save
+
+MÉTODO 1: DESPLIEGUE AUTOMÁTICO (RECOMENDADO)
+
+1. Configurar GitHub Actions:
+   - El archivo .github/workflows/deploy.yml ya está configurado
+   - Cada push a main activará el despliegue automático
+
+2. Hacer push para desplegar:
+```bash
+git add .
+git commit -m "Configuración inicial"
+git push origin main
+```
+
+MÉTODO 2: DESPLIEGUE MANUAL
+
+Usando script de despliegue:
+```bash
+# Despliegue básico
+./deploy-github-pages.sh
+
+# Despliegue con parámetros específicos
+./deploy-github-pages.sh mi-repositorio mi-usuario
+```
+
+Usando comandos manuales:
+```bash
+# 1. Construir el proyecto
+npm run build
+
+# 2. Crear rama gh-pages
+git checkout -b gh-pages
+
+# 3. Copiar archivos construidos
+cp -r dist/* .
+
+# 4. Commit y push
+git add .
+git commit -m "Deploy a GitHub Pages"
+git push origin gh-pages --force
+
+# 5. Volver a main
+git checkout main
+```
+
+CONFIGURACIÓN AVANZADA:
+
+1. Dominio personalizado:
+   - Comprar dominio
+   - Configurar DNS con CNAME
+   - Configurar en GitHub Settings > Pages
+
+2. HTTPS automático:
+   - GitHub Pages proporciona SSL automático
+   - Certificados se renuevan automáticamente
+
+VENTAJAS DE GITHUB PAGES:
+✅ Gratuito para repositorios públicos
+✅ Despliegue automático con cada push
+✅ HTTPS automático incluido
+✅ CDN global optimizado
+✅ Integración perfecta con Git
+✅ Configuración en minutos
+
+COSTOS:
+- GRATUITO para repositorios públicos
+- GRATUITO para repositorios privados (con GitHub Pro)
+- Límites: 1GB almacenamiento, 100GB ancho de banda/mes
+
+TROUBLESHOOTING GITHUB PAGES:
+
+1. ERROR: "404 Not Found"
+   CAUSA: Configuración incorrecta de base en astro.config.mjs
+   SOLUCIÓN: Verificar que base coincida con nombre del repositorio
+
+2. ERROR: "Build failed"
+   CAUSA: Error en construcción del proyecto
+   SOLUCIÓN: Verificar logs en GitHub Actions
+
+3. ERROR: "Permission denied"
+   CAUSA: Permisos insuficientes
+   SOLUCIÓN: Verificar configuración de GitHub Actions
+
+================================================================================
 CONTACTO Y SOPORTE
 ================================================================================
 

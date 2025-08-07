@@ -129,6 +129,25 @@ gcloud config set project TU_PROJECT_ID
 ./deploy.sh TU_PROJECT_ID
 ```
 
+## 🌐 Despliegue en GitHub Pages
+
+Para desplegar en GitHub Pages, consulta el archivo [GITHUB_PAGES_DEPLOYMENT.md](./GITHUB_PAGES_DEPLOYMENT.md) para instrucciones detalladas.
+
+### Despliegue rápido
+```bash
+# Configurar repositorio
+git remote add origin https://github.com/TU_USUARIO/TU_REPOSITORIO.git
+
+# Desplegar automáticamente
+git push origin main
+```
+
+### Despliegue manual
+```bash
+# Despliegue manual
+./deploy-github-pages.sh TU_REPOSITORIO TU_USUARIO
+```
+
 ## 📱 Responsive Design
 
 La aplicación está optimizada para:
