@@ -6,8 +6,8 @@
 set -e
 
 # Variables por defecto
-USUARIO=${1:-"TU_USUARIO"}
-REPOSITORIO=${2:-"TU_REPOSITORIO"}
+USUARIO=${1:-"IngZidany"}
+REPOSITORIO=${2:-"se-web-skills"}
 
 echo "🚀 Configurando proyecto para GitHub Pages..."
 echo "👤 Usuario: $USUARIO"

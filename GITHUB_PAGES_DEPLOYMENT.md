@@ -22,7 +22,7 @@ Esta guía te ayudará a desplegar tu aplicación web tecnológica en GitHub Pag
 ```bash
 # Clonar el repositorio (si no lo tienes localmente)
 git clone https://github.com/TU_USUARIO/TU_REPOSITORIO.git
-cd TU_REPOSITORIO
+cd se-web-skills
 
 # O si ya tienes el proyecto local
 git init
@@ -34,15 +34,15 @@ git remote add origin https://github.com/TU_USUARIO/TU_REPOSITORIO.git
 Edita `astro.config.mjs`:
 ```javascript
 export default defineConfig({
-  site: 'https://TU_USUARIO.github.io',
-  base: '/TU_REPOSITORIO',
+  site: 'https://github.com/IngZidany',
+  base: '/se-web-skills',
   // ... resto de configuración
 });
 ```
 
 **Reemplaza:**
-- `TU_USUARIO` con tu nombre de usuario de GitHub
-- `TU_REPOSITORIO` con el nombre de tu repositorio
+- `TU_USUARIO` con `IngZidany` (tu nombre de usuario de GitHub)
+- `TU_REPOSITORIO` con `se-web-skills` (nombre de tu repositorio)
 
 ## 🚀 Métodos de Despliegue
 
@@ -219,4 +219,4 @@ git push origin gh-pages
 
 ---
 
-**¡Tu sitio estará disponible en: `https://TU_USUARIO.github.io/TU_REPOSITORIO`** 🎉 
+**¡Tu sitio estará disponible en: `https://IngZidany.github.io/se-web-skills`** 🎉 

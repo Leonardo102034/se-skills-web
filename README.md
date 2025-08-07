@@ -136,7 +136,7 @@ Para desplegar en GitHub Pages, consulta el archivo [GITHUB_PAGES_DEPLOYMENT.md]
 ### Despliegue rápido
 ```bash
 # Configurar repositorio
-git remote add origin https://github.com/TU_USUARIO/TU_REPOSITORIO.git
+git remote add origin https://github.com/IngZidany/se-web-skills.git
 
 # Desplegar automáticamente
 git push origin main
@@ -145,7 +145,7 @@ git push origin main
 ### Despliegue manual
 ```bash
 # Despliegue manual
-./deploy-github-pages.sh TU_REPOSITORIO TU_USUARIO
+./deploy-github-pages.sh se-web-skills IngZidany
 ```
 
 ## 📱 Responsive Design

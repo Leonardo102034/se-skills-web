@@ -6,8 +6,8 @@ import tailwindcss from '@tailwindcss/vite';
 // Configuración específica para GitHub Pages
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://TU_USUARIO.github.io',
-  base: '/TU_REPOSITORIO',
+  site: 'https://github.com/IngZidany',
+  base: '/se-web-skills',
   vite: {
     plugins: [tailwindcss()]
   },
