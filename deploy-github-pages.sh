@@ -8,7 +8,7 @@ set -e
 # Variables por defecto
 REPOSITORIO=${1:-"se-web-skills"}
 USUARIO=${2:-"IngZidany"}
-BRANCH="gh-pages"
+BRANCH="main"
 
 echo "🚀 Iniciando despliegue a GitHub Pages..."
 echo "📋 Repositorio: $REPOSITORIO"

@@ -11,7 +11,7 @@ Una aplicación web moderna y responsive desarrollada con **Astro**, **Tailwind 
 - Navegación principal con 4 secciones clave
 
 ### Navegación Principal
-- **Pensamiento Crítico**: Análisis, evaluación, síntesis y toma de decisiones
+- **Pensamiento Crítico**: Análisis, evaluación, síntesis y toma de decisiones.
 - **Comunicación**: Habilidades verbales, escritas, no verbales y digitales
 - **Creatividad**: Ideación, innovación, expresión artística e inspiración
 - **Colaboración**: Trabajo en equipo, liderazgo, comunicación grupal y resolución de conflictos
