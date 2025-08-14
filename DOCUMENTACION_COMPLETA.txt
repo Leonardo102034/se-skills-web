@@ -182,6 +182,9 @@ npm run preview
 
 # Comando de Astro
 npm run astro
+
+# Comando opcional para ejecutar el proyecto
+npx astro dev --verbose
 ```
 
 CARACTERÍSTICAS DEL SERVIDOR DE DESARROLLO:
